@@ -5,4 +5,4 @@ var RNDeviceInfo = require('../default');
 
 RNDeviceInfo.userAgent = window.navigator.userAgent;
 
-module.exports = RNDeviceInfo;
+module.exports = RNDeviceInfo; //
