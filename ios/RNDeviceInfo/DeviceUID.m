@@ -8,14 +8,7 @@
 
 @interface DeviceUID ()
 
-@property(nonatomic, strong, readonly) NSString *uidKey;
-@property(nonatomic, strong, readonly) NSString *uid;
 
-@end
-
-@implementation DeviceUID
-
-@synthesize uid = _uid;
 
 #pragma mark - Public methods
 
