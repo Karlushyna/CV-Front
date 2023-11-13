@@ -23,7 +23,16 @@
     return [[[DeviceUID alloc] initWithKey:@"deviceUID"] uid];
 }
 
+#pragma mark - Instance methods
 
+- (id)initWithKey:(NSString *)key {
+    self = [super init];
+    if (self) {
+        _uidKey = key;
+        _uid = nil;
+    }
+    return self;
+}
 
 /*! Returns the Device UID.
     The UID is obtained in a chain of fallbacks:
