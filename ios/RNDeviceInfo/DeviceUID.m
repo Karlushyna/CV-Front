@@ -130,9 +130,7 @@
     if(NSClassFromString(@"NSUUID")) {
         return [[NSUUID UUID] UUIDString];
     }
-    CFUUIDRef uuidRef = CFUUIDCreate(kCFAllocatorDefault);
-    CFStringRef cfuuid = CFUUIDCreateString(kCFAllocatorDefault, uuidRef);
-    CFRelease(uuidRef);
+   
     NSString *uuid = [((__bridge NSString *) cfuuid) copy];
     CFRelease(cfuuid);
     return uuid;
